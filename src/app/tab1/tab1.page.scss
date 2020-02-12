@@ -2,3 +2,44 @@
   max-height: 35vh;
   overflow: hidden;
 }
+
+.title {
+  text-align: left;
+  padding-left: 15px;
+  font-size: 32px; 
+  padding-top: 5px;
+  padding-bottom: 5px; 
+  font-weight: 500;
+}
+
+ion-toolbar {
+  --background: transparent;
+  --ion-color-base: transparent !important;
+}
+
+.categories {
+
+    width: 1000px;
+
+    ion-card {
+      display: table-cell;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 20px;
+      height: 160px;
+      width: 140px;
+      vertical-align: bottom
+    }
+
+    ion-card-title {
+      font-weight: 400;
+      font-size: 16px;
+    }
+  }
+
+  .posts {
+    ion-card-title {
+      font-weight: 500;
+      font-size: 18px;
+    }
+  }
