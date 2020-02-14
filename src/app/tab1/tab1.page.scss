@@ -1,3 +1,6 @@
+ion-content ion-toolbar {
+  --background: translucent;
+}
 .welcome-card img {
   max-height: 35vh;
   overflow: hidden;
@@ -10,11 +13,6 @@
   padding-top: 5px;
   padding-bottom: 5px; 
   font-weight: 500;
-}
-
-ion-toolbar {
-  --background: transparent;
-  --ion-color-base: transparent !important;
 }
 
 .categories {
