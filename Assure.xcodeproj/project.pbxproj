@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		9BDD66196E47F8FA99A31E7B /* Pods_Assure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ADDED0D598A63A03E5D42CC /* Pods_Assure.framework */; };
+		B21CE46F2405D8DE00C0AE48 /* SCLFlicManagerSimulator.m in Sources */ = {isa = PBXBuildFile; fileRef = B21CE46B2405D8DE00C0AE48 /* SCLFlicManagerSimulator.m */; };
+		B21CE4702405D8DE00C0AE48 /* SCLFlicButtonSimulator.m in Sources */ = {isa = PBXBuildFile; fileRef = B21CE46E2405D8DE00C0AE48 /* SCLFlicButtonSimulator.m */; };
+		B21CE4762405DB6B00C0AE48 /* fliclib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B21CE4732405D9FC00C0AE48 /* fliclib.framework */; };
 		B22C3C1F24020759008AE099 /* ContactAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22C3C1D24020759008AE099 /* ContactAddViewController.swift */; };
 		B22C3C2024020759008AE099 /* ContactAddViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B22C3C1E24020759008AE099 /* ContactAddViewController.xib */; };
 		B22C3C2424020C7A008AE099 /* CommunityBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22C3C2224020C7A008AE099 /* CommunityBoardViewController.swift */; };
@@ -38,6 +41,13 @@
 		0ADDED0D598A63A03E5D42CC /* Pods_Assure.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Assure.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F8CB800977CD94698B39C57 /* Pods-Assure.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Assure.release.xcconfig"; path = "Target Support Files/Pods-Assure/Pods-Assure.release.xcconfig"; sourceTree = "<group>"; };
 		AC7622F2C0204EB6C3B4C3CF /* Pods-Assure.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Assure.debug.xcconfig"; path = "Target Support Files/Pods-Assure/Pods-Assure.debug.xcconfig"; sourceTree = "<group>"; };
+		B21CE46A2405D8DE00C0AE48 /* SCLFlicButtonSimulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCLFlicButtonSimulator.h; sourceTree = "<group>"; };
+		B21CE46B2405D8DE00C0AE48 /* SCLFlicManagerSimulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCLFlicManagerSimulator.m; sourceTree = "<group>"; };
+		B21CE46C2405D8DE00C0AE48 /* fliclibWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fliclibWrapper.h; sourceTree = "<group>"; };
+		B21CE46D2405D8DE00C0AE48 /* SCLFlicManagerSimulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCLFlicManagerSimulator.h; sourceTree = "<group>"; };
+		B21CE46E2405D8DE00C0AE48 /* SCLFlicButtonSimulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCLFlicButtonSimulator.m; sourceTree = "<group>"; };
+		B21CE4732405D9FC00C0AE48 /* fliclib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = fliclib.framework; sourceTree = "<group>"; };
+		B21CE4752405DA9A00C0AE48 /* Assure-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Assure-Bridging-Header.h"; sourceTree = "<group>"; };
 		B22C3C1D24020759008AE099 /* ContactAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactAddViewController.swift; sourceTree = "<group>"; };
 		B22C3C1E24020759008AE099 /* ContactAddViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactAddViewController.xib; sourceTree = "<group>"; };
 		B22C3C2224020C7A008AE099 /* CommunityBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityBoardViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B21CE4762405DB6B00C0AE48 /* fliclib.framework in Frameworks */,
 				9BDD66196E47F8FA99A31E7B /* Pods_Assure.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -91,8 +102,21 @@
 			isa = PBXGroup;
 			children = (
 				0ADDED0D598A63A03E5D42CC /* Pods_Assure.framework */,
+				B21CE4732405D9FC00C0AE48 /* fliclib.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B21CE4722405D98A00C0AE48 /* simulator-wrapper */ = {
+			isa = PBXGroup;
+			children = (
+				B21CE46C2405D8DE00C0AE48 /* fliclibWrapper.h */,
+				B21CE46A2405D8DE00C0AE48 /* SCLFlicButtonSimulator.h */,
+				B21CE46E2405D8DE00C0AE48 /* SCLFlicButtonSimulator.m */,
+				B21CE46D2405D8DE00C0AE48 /* SCLFlicManagerSimulator.h */,
+				B21CE46B2405D8DE00C0AE48 /* SCLFlicManagerSimulator.m */,
+			);
+			path = "simulator-wrapper";
 			sourceTree = "<group>";
 		};
 		B22C3C2124020C68008AE099 /* Community Board */ = {
@@ -169,6 +193,8 @@
 				B295244F23FF9448002B94ED /* LaunchScreen.storyboard */,
 				B295244623FF9445002B94ED /* SceneDelegate.swift */,
 				B295245223FF9448002B94ED /* Info.plist */,
+				B21CE4752405DA9A00C0AE48 /* Assure-Bridging-Header.h */,
+				B21CE4722405D98A00C0AE48 /* simulator-wrapper */,
 			);
 			path = Assure;
 			sourceTree = "<group>";
@@ -218,6 +244,7 @@
 				TargetAttributes = {
 					B295244023FF9445002B94ED = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -294,6 +321,7 @@
 				B295244523FF9445002B94ED /* AppDelegate.swift in Sources */,
 				B295244723FF9445002B94ED /* SceneDelegate.swift in Sources */,
 				B2CBC072240202DD00BC5BF0 /* OnboardingContactsViewController.swift in Sources */,
+				B21CE46F2405D8DE00C0AE48 /* SCLFlicManagerSimulator.m in Sources */,
 				B22C3C2924020D09008AE099 /* LiveTrackingInitialViewController.swift in Sources */,
 				B2CBC0752402034800BC5BF0 /* CreateProfileViewController.swift in Sources */,
 				B2CBC06C2402010C00BC5BF0 /* OnboardingSettingsViewController.swift in Sources */,
@@ -301,6 +329,7 @@
 				B22C3C1F24020759008AE099 /* ContactAddViewController.swift in Sources */,
 				B22C3C2424020C7A008AE099 /* CommunityBoardViewController.swift in Sources */,
 				B2A3DAA023FF96FA00D76B26 /* TabBarViewController.swift in Sources */,
+				B21CE4702405D8DE00C0AE48 /* SCLFlicButtonSimulator.m in Sources */,
 				B295245C23FF9497002B94ED /* IntroViewController.swift in Sources */,
 				B22C3C2E2402133F008AE099 /* IncidentsMainViewController.swift in Sources */,
 			);
@@ -447,8 +476,14 @@
 			baseConfigurationReference = AC7622F2C0204EB6C3B4C3CF /* Pods-Assure.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Assure/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -456,6 +491,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.testAssure;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Assure/Assure-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -466,8 +503,14 @@
 			baseConfigurationReference = 2F8CB800977CD94698B39C57 /* Pods-Assure.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Assure/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -475,6 +518,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.testAssure;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Assure/Assure-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
