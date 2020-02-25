@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Assure" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dnk-8r-5rk">
+                                <rect key="frame" x="100" y="378.66666666666669" width="175" height="65"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="54"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Live fearlessly." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pap-2j-rIF">
+                                <rect key="frame" x="123.66666666666669" y="463.66666666666669" width="128" height="23"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Peace of mind and power for anyone on the go" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tT5-ad-bB7">
+                                <rect key="frame" x="72.666666666666686" y="506.66666666666674" width="230" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="230" id="jeA-kU-chV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rqG-ic-kAV">
+                                <rect key="frame" x="93.666666666666671" y="171" width="187.66666666666663" height="187.66666666666663"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="rqG-ic-kAV" secondAttribute="height" multiplier="1:1" id="im8-A3-oSt"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="dnk-8r-5rk" firstAttribute="top" secondItem="rqG-ic-kAV" secondAttribute="bottom" constant="20" id="72J-wE-ToY"/>
+                            <constraint firstItem="rqG-ic-kAV" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="8mb-Wq-J43"/>
+                            <constraint firstItem="pap-2j-rIF" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="NTo-zo-7mt"/>
+                            <constraint firstItem="dnk-8r-5rk" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="ZF6-U5-YtB"/>
+                            <constraint firstItem="dnk-8r-5rk" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ZMf-yb-wi4"/>
+                            <constraint firstItem="tT5-ad-bB7" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="baI-zd-zV4"/>
+                            <constraint firstItem="tT5-ad-bB7" firstAttribute="top" secondItem="pap-2j-rIF" secondAttribute="bottom" constant="20" id="cpO-hY-j50"/>
+                            <constraint firstItem="pap-2j-rIF" firstAttribute="top" secondItem="dnk-8r-5rk" secondAttribute="bottom" constant="20" id="jo1-tx-KSc"/>
+                            <constraint firstItem="rqG-ic-kAV" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.5" id="oTZ-9A-rzG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+    </scenes>
+</document>

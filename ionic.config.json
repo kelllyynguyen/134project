@@ -1,7 +1,0 @@
-{
-  "name": "Assure",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "angular"
-}
