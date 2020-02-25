@@ -8,12 +8,14 @@
 
 import UIKit
 
-class CreateProfileViewController: UIViewController {
+class CreateProfileViewController: UIViewController, UITextFieldDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        let tapGesture = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:)))
+        self.view.addGestureRecognizer(tapGesture)
     }
 
     @IBAction func backButtonPress(_ sender: UIButton) {
@@ -23,7 +25,10 @@ class CreateProfileViewController: UIViewController {
         let onboardingSettings = OnboardingSettingsViewController(nibName: "OnboardingSettingsViewController", bundle: nil)
         self.navigationController?.pushViewController(onboardingSettings, animated: true)
     }
-    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
     /*
     // MARK: - Navigation
 

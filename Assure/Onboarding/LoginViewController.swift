@@ -8,13 +8,15 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, UITextFieldDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         self.navigationController?.setNavigationBarHidden(true, animated: true)
+        let tapGesture = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:)))
+        self.view.addGestureRecognizer(tapGesture)
     }
 
 
@@ -26,6 +28,10 @@ class LoginViewController: UIViewController {
         //let tbc = TabBarViewController(nibName: "TabBarViewController", bundle: nil)
         let createProfile = CreateProfileViewController(nibName: "CreateProfileViewController", bundle: nil)
         self.navigationController?.pushViewController(createProfile, animated: true)
+    }
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
     /*
     // MARK: - Navigation
