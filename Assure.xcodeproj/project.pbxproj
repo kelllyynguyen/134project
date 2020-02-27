@@ -35,6 +35,8 @@
 		B2CBC072240202DD00BC5BF0 /* OnboardingContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CBC070240202DD00BC5BF0 /* OnboardingContactsViewController.swift */; };
 		B2CBC073240202DD00BC5BF0 /* OnboardingContactsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2CBC071240202DD00BC5BF0 /* OnboardingContactsViewController.xib */; };
 		B2CBC0752402034800BC5BF0 /* CreateProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CBC0742402034800BC5BF0 /* CreateProfileViewController.swift */; };
+		EDD2A7452407A272007EED98 /* CreateNewReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD2A7432407A272007EED98 /* CreateNewReportViewController.swift */; };
+		EDD2A7462407A272007EED98 /* CreateNewReportViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDD2A7442407A272007EED98 /* CreateNewReportViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +76,8 @@
 		B2CBC070240202DD00BC5BF0 /* OnboardingContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContactsViewController.swift; sourceTree = "<group>"; };
 		B2CBC071240202DD00BC5BF0 /* OnboardingContactsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingContactsViewController.xib; sourceTree = "<group>"; };
 		B2CBC0742402034800BC5BF0 /* CreateProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProfileViewController.swift; sourceTree = "<group>"; };
+		EDD2A7432407A272007EED98 /* CreateNewReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewReportViewController.swift; sourceTree = "<group>"; };
+		EDD2A7442407A272007EED98 /* CreateNewReportViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateNewReportViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +146,8 @@
 			children = (
 				B22C3C2C2402133F008AE099 /* IncidentsMainViewController.swift */,
 				B22C3C2D2402133F008AE099 /* IncidentsMainViewController.xib */,
+				EDD2A7432407A272007EED98 /* CreateNewReportViewController.swift */,
+				EDD2A7442407A272007EED98 /* CreateNewReportViewController.xib */,
 			);
 			path = Incidents;
 			sourceTree = "<group>";
@@ -271,6 +277,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDD2A7462407A272007EED98 /* CreateNewReportViewController.xib in Resources */,
 				B2CBC06D2402010C00BC5BF0 /* OnboardingSettingsViewController.xib in Resources */,
 				B22C3C2F2402133F008AE099 /* IncidentsMainViewController.xib in Resources */,
 				B22C3C2024020759008AE099 /* ContactAddViewController.xib in Resources */,
@@ -322,6 +329,7 @@
 				B295244723FF9445002B94ED /* SceneDelegate.swift in Sources */,
 				B2CBC072240202DD00BC5BF0 /* OnboardingContactsViewController.swift in Sources */,
 				B21CE46F2405D8DE00C0AE48 /* SCLFlicManagerSimulator.m in Sources */,
+				EDD2A7452407A272007EED98 /* CreateNewReportViewController.swift in Sources */,
 				B22C3C2924020D09008AE099 /* LiveTrackingInitialViewController.swift in Sources */,
 				B2CBC0752402034800BC5BF0 /* CreateProfileViewController.swift in Sources */,
 				B2CBC06C2402010C00BC5BF0 /* OnboardingSettingsViewController.swift in Sources */,
@@ -479,12 +487,13 @@
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = U6QCH3V747;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Assure/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -506,12 +515,13 @@
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = U6QCH3V747;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Assure/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

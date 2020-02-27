@@ -1,14 +1,14 @@
 //
-//  IncidentsMainViewController.swift
+//  CreateNewReportViewController.swift
 //  Assure
 //
-//  Created by Joshua Kuan on 2/22/20.
+//  Created by Kay Lab on 2/26/20.
 //  Copyright © 2020 Joshua Kuan. All rights reserved.
 //
 
 import UIKit
 
-class IncidentsMainViewController: UIViewController {
+class CreateNewReportViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,15 +16,6 @@ class IncidentsMainViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    
-    @IBAction func createNewReportPress(_ sender: UIButton) {
-        let createNewReport = CreateNewReportViewController(nibName: "CreateNewReportViewController", bundle: nil)
-        self.navigationController?.pushViewController(createNewReport, animated: true)
-    }
-    
-
-    @IBAction func createFromLoggedIncidentPress(_ sender: UIButton) {
-    }
     /*
     // MARK: - Navigation
 

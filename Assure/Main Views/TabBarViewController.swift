@@ -29,15 +29,14 @@ class TabBarViewController: UITabBarController {
         let communityNav = UINavigationController(rootViewController: communityVC)
         communityNav.navigationBar.prefersLargeTitles = true
         communityNav.setNavigationBarHidden(false, animated: false)
-        communityVC.title = "Commnunity Board"
+        communityVC.title = "Community Board"
         communityNav.tabBarItem.title = "Community Board"
         
         let incidentVC = IncidentsMainViewController(nibName: "IncidentsMainViewController", bundle: nil)
         let incidentNav = UINavigationController(rootViewController: incidentVC)
         incidentNav.navigationBar.prefersLargeTitles = true
         incidentNav.setNavigationBarHidden(false, animated: false)
-
-        incidentVC.title = "Incidents"
+        incidentVC.title = "Report an Incident"
         incidentNav.tabBarItem.title = "Incidents"
         self.viewControllers = [communityNav, liveTrackingNav, incidentNav]
         
